@@ -10,6 +10,7 @@ body{
     font-size: 1.3rem;
 }
 
+/*div container to hold the content in the center of the page*/
 .container {
     width: 80%;
     max-width: 850px;
@@ -21,16 +22,6 @@ body{
     color: #fff;
     
 }
-.hero-2 h1 {
-    color: #87629A;
-}
-
-.hero-3 {
-    padding: 100px 0;
-    background-color: #136C72;
-    color: #fff;
-    
-}
 
 .hero__text {
     width: 60%;
@@ -39,6 +30,22 @@ body{
 hero p{
     margin-bottom: 3em;
 }
+
+
+/*Section classes to set padding and background color*/
+.three-col{
+    padding: 3em 0;
+}
+.two-col{
+    background-color: #136c72;
+    color: #fff;
+    padding: 3em 0;
+}
+.accent-text { /*more reusable style*/
+    color: #87629a
+}
+
+
 
 h1 {
     font-size: 3rem;
@@ -59,16 +66,22 @@ h1 {
     background-color: #1c96cf;
 }
 
-.col{
-    /* margin: 30px; */
+/*div col to hold the content*/.col{
+    margin: 10px;
     width: 100%;
     justify-content: center;
 }
 
+.col + .col {
+    margin-left: 30px;
+}
+
+
+/*div row to create the display flex*/
 .row {
     display: flex;
     flex-direction: row;
     text-align: center;
-    gap: 30px;
+    /* gap: 30px; */
 
 }
